@@ -17,9 +17,7 @@
   <link href="./css/agenda.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template-->
-  <link href="./css/sb-admin-2.min.css" rel="stylesheet">
-  <link href="./css/sb-admin-2.css" rel="stylesheet">
-
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -288,76 +286,109 @@
 
         </nav>
 
-                <div class="container" style="padding-left: 8cm;">
-                    <div class="row">
-
-                        <div class="col">
-
-                            <div class="Excluir">
-                                <p>
-                                    Uma Pena que você está desistindo de nós, preencha abaixo o formulário e o motivo
-                                    que do cancelamento.
-                                </p>
-                                <form>
-                                    <div class="form-row col-md-10">
-                                        <label for="exampleFormControlInput1">Endereço de email</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            placeholder="nome@exemplo.com">
-                                    </div>
-                                    <div class="espaco"></div>
-
-                                    <div class="form-row col-md-10">
-                                        <label for="inputEmail4">Nome</label>
-                                        <input type="text" class="form-control" id="inputEmail4" placeholder="nome">
-                                    </div>
-
-                                    <div class="espaco"></div>
-
-                                    <div class="form-row col-md-10">
-                                        <select class="form-control">
-                                            <option>Selecione o Motivo</option>
-                                            <option>O sistema é muito Caro</option>
-                                            <option>Estou fechando a Loja</option>
-                                            <option>O concorrente é melhor</option>
-                                            <option>Voltei a usar papel</option>
-
-
-
-
-                                        </select>
-                                    </div>
-                                    <div class="espaco"></div>
-                                    <div class="form-row col-md-10">
-                                        <label for="exampleFormControlTextarea1">Nos informe aqui o que podemos
-                                            Melhorar</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="5"></textarea>
-                                    </div>
-                                    <div class="espaco"></div>
-                                    <button type="submit" onclick="funcao1()" value="Exibir Alert" class="btn btn-primary"
-                                        style="margin-top: 0.1cm; margin-left: 5cm;">Desativar</button>
-                                </form>
-                            </div>
-
-                        </div>
+       <div class="comtainer"style="padding-left:1cm; ">
+        <div class="row">
+                <div class="cartao col-6" >
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-10">
+                        <label for="inputEmail4">Razão Social</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Latidos Pet Comercio de Produtos para Animais">
+                      </div>
+                      
                     </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-10">
+                      <label for="inputPassword4">Nome Fantasia</label>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="Latidos Pet">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-5">
+                      <label for="inputPassword4">CNPJ</label>
+                      <input type="text" class="form-control" id="inputPassword4" placeholder="98.765.432/0001-00">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="inputPassword4">Inscrição Estadual</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="02.323.1234-22">
+                      </div>
+                    
+                  </div>
+                  
+                    <div class="form-row">
+                    <div class="form-group col-md-5">
+                      <label for="inputAddress">Endereço</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Tomates,1234">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="inputZip">Cep</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="98765-432">
+                      </div>
+                    </div>
+                    
+                    <div class="form-row">
+                      <div class="form-group col-md-5">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Arroio do Sul">
+                      </div>
+                      <div class="form-group col-md-5">
+                        <label for="inputState">Estado</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Escolha...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Anexar Foto da Loja</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary" style="margin-top: 0.1cm">Salvar Alteração</button>
+                    
+                   
+                  </form>
+                  
                 </div>
-</body>
-<script>
+           
+                <div class="espaco">
 
-    function funcao1() {
-        alert("Seu pedido foi enviado");
-    }
-</script>
- <script src="vendor/jquery/jquery.min.js"></script>
- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                </div>
+                
+                <div class="Editar">
+                    <a href="desativa.html">
+                    <div class="row">
+                    <div class="col col-lg-1">
+                        <i class="far fa-trash-alt" style='font-size:24px;color: blue; padding-right: 0.5cm'></i>
+                    </div>
+                    <div style="padding-left: 0.5cm"></div>
+                    <div class="col col-md-5">
+                      <h6 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:darkgray" >Desativar PetShop</h6>
+                    </div>
+                  </div>
+                  </a>
+              </div>
+              </div>
+                  
+                  </div>
 
- <!-- Core plugin JavaScript-->
- <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
- <!-- Custom scripts for all pages-->
- <script src="js/sb-admin-2.min.js"></script>
-
+                </div>
+              </div>
             
+         
+        
+            </body>
 
-</html>
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+          
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+          
+                       
+            </html>
